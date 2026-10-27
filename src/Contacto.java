@@ -1,21 +1,20 @@
 public class Contacto {
 
-    //Atrubutos: en el doc están
+    //Atrubutos: en el doc están los atributos
     private String nombre;
-    private String apellido;
+    private String telefono;
     private String email;
 
     //Metodos:
 
     //Constructor: para todos los atributos
-    public Contacto(String nombre, String apellido, String email) {
+    public Contacto(String nombre, String telefono, String email) {
         this.nombre = nombre;
-        this.apellido = apellido;
+        this.telefono = telefono;
         this.email = email;
     }
 
     //getters y setters para los atributos
-
     public String getNombre() {
         return nombre;
     }
@@ -24,12 +23,12 @@ public class Contacto {
         this.nombre = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getTelefono() {
+        return telefono;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
     public String getEmail() {
@@ -39,11 +38,9 @@ public class Contacto {
     public void setEmail(String email) {
         this.email = email;
     }
-
+    //Formato de la salida:
     @Override
     public String toString() {
-        nombre = nombre;
-
-        return super.toString();
+        return nombre + " | Telefono: " + telefono + " | Email: " + email;
     }
 }
